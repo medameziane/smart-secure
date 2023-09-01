@@ -1,0 +1,103 @@
+@import url("./custom.css");
+
+/* Start edit header */
+.nav-item .active ,.nav-item a:hover{
+  color: var(--main-color) !important;
+}
+.dropdown .dropdown-menu{
+  display: block !important;
+  transform: translateY(-10px);
+  visibility: hidden;
+  transition: transform .3s;
+}
+.dropdown:hover .dropdown-menu{
+  visibility: visible;
+  transform: translateY(0px);
+}
+/* End edit header */
+
+/* Start edit features */
+.card-feature{
+  background-color: var(--light-color);
+  border-radius: 10px;
+}
+.card-feature .feature-number{
+  font-size: 80px;
+}
+/* End edit features */
+
+/* Start edit about section */
+.about-section{
+  background-color: var(--light-color);
+}
+.about-section .about-title{
+  width: fit-content;
+}
+/* End edit about section */
+
+
+/* Start edit services */
+
+.services-title,.services-items,
+.projects-title,.projects-items
+.members-title,.members-items
+{
+  transform: translatey(200px);
+  opacity: 0;
+}
+.services-title.active,.services-items.active,
+.projects-title.active,.projects-items.active
+.members-title.active,.members-items.active
+{
+  transform: translatey(0px);
+  opacity: 1;
+  transition: transform .7s;
+}
+
+.contact-section .contact-image,
+.about-section .about-image
+{
+  transform: translateX(-200px);
+  opacity: 0;
+}
+.contact-section .contact-image.active,
+.about-section .about-image.active
+{
+  transform: translateX(0px);
+  opacity: 1;
+  transition: transform .7s;
+}
+
+.contact-section .contact-form,
+.about-section .about-content,
+.reasons-section .reason-content
+{
+  transform: translateX(200px);
+  opacity: 0;
+}
+.contact-section .contact-form.active,
+.about-section .about-content.active,
+.reasons-section .reason-content.active
+{
+  transform: translateX(0px);
+  opacity: 1;
+  transition: transform .7s;
+}
+.services-items .service{
+  transition: all .3s;
+}
+.services-items .service:hover{
+  background-color: #fff !important;
+}
+/* End edit services */
+
+/* Start edit projects */
+
+/* End edit projects */
+
+/* Start edit members-items */
+.members-items .member:hover img{
+  transform: scale(1.05);
+}
+/* End edit members-items */
+

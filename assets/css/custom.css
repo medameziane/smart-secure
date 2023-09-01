@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
+  scroll-behavior: smooth;
+  word-break: break-word;
+}
+
+:root{
+  --main-color : #65b530;
+  --bg-color : #F5F5F5;
+  --bg-footer : #010e2e;
+  --border-color : #EEEEEE;
+  --light-color : #f5f5f5;
+  --text-color : #9B9B9B;
+  --header-color : #15151A;
+
+}
+
+body.dark{
+  --bg-color: #18191A;
+  --light-color : #242526;
+  --header-color : #f6f7f8;
+  --text-color: #CCC;
+  --border-color : #383b3d;
+
+  background-color: var(--bg-color);
+}
+
+
+/* Start General */
+p,h1,h2,h3,h4,h5,h6,ul,li,ol{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+}
+a{
+  color: var(--light-color);
+  text-decoration: none;
+}
+a:hover{
+  color: var(--main-color);
+}
+img{
+  width: 100%;
+  height: 100%;
+  transition: all .3s;
+}
+
+/* End General */
+
+/* Start edit sizes */
+.fs-7{
+  font-size: 3rem !important;
+}
+.fs-8{
+  font-size: 3.5rem !important;
+}
+.fit-content{
+  width: fit-content;
+}
+/* End edit sizes */
+
+/* Start custom colors */
+.bg-grey{
+  background-color: var(--light-color);
+}
+.bg-footer{
+  background-color: var(--bg-footer);
+}
+.text-color{
+  color: var(--text-color);
+}
+.text-primary{
+  color: var(--main-color) !important;
+}
+input:focus,textarea:focus,input:valid,textarea:valid{
+  outline: none !important;
+  border: 1px solid var(--main-color) !important;
+  box-shadow:none !important;
+}
+/* End custom colors */
+
+/* Start edit grid-page */
+.grid-col-2{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(550px,1fr));
+  gap: 10px;
+}
+.grid-col-3{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  gap: 10px;
+}
+.grid-col-4{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  gap: 10px;
+}
+/* End edit grid-page */
+
+.btn-action{
+  border: 1px solid var(--main-color);
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #000;
+  transition: .3s ease-in-out;
+}
+.btn-action:hover{
+  background-color: var(--main-color) !important;
+  color: #fff;
+}
